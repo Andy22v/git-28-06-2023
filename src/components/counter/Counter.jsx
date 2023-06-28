@@ -6,14 +6,18 @@ const Counter = () => {
   const [count, setCount] = useState(0);
 
   const handleDecrement = () => {
-    setCount((Prev) => Prev);
+    setCount(count - 1);
+  };
+
+  const handleIncrease = () => {
+    setCount(count + 1);
   };
 
   return (
     <div className="Counter">
       <button onClick={handleDecrement}>-</button>
       <p>{count}</p>
-      <button>+</button>
+      <button onClick={handleIncrease}>+</button>
     </div>
   );
 };
