@@ -1,0 +1,18 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App h1 {
+  text-align: center;
+}
+
+.counters {
+  width: 80%;
+  gap: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
